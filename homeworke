@@ -33,22 +33,21 @@ printf("common divisor is %d\n",d);
 return 0;
 
 խնդիր 3
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-int number;
-printf("enter the number\n");
-scanf("%d",&number);
-
-int a = 16;
-
-if ( a & number != 16){
-        printf("-----%d\n",number);
-}
-else{
-        number=number + a;
-        printf("number is %d\n",number);
-}
-
-return 0;
+int main()
+{
+    int num = 0;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+    int y = num >> 4;
+    int d = 0;
+    if(y%2 == 0){
+        y = y | 1;
+        y = y << 4;
+        d = num | y;
+        printf("Modified number: %d", d);
+        } else
+        printf("Same number: %d", num);
+    return 0;
 }
