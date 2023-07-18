@@ -1,0 +1,54 @@
+խնդիր 1
+#include <stdio.h>
+
+int main(){
+
+        int year = 0;
+        printf("enter the year number\n");
+        scanf("%d",&year);
+        if ( year%4 == 0)
+                printf("Year is leap\n");
+        else
+                printf("year is not leap\n");
+   return 0;
+}
+
+
+//խնդիր 2
+
+#include <stdio.h>
+
+int main(){
+int a,b,c,d;
+int i = 1;
+printf("enter the numbers \n");
+scanf("%d%d%d",&a,&b,&c);
+for ( i = 1;i<(a + b + c);i++){
+        if(a%i==0 && b%i==0 && c%i==0){
+         d = i + 0;
+        }
+}
+printf("common divisor is %d\n",d);
+
+return 0;
+
+խնդիր 3
+#include<stdio.h>
+
+int main(){
+int number;
+printf("enter the number\n");
+scanf("%d",&number);
+
+int a = 16;
+
+if ( a & number != 16){
+        printf("-----%d\n",number);
+}
+else{
+        number=number + a;
+        printf("number is %d\n",number);
+}
+
+return 0;
+}
